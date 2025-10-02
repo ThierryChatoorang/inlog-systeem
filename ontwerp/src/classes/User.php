@@ -45,8 +45,6 @@
                 if($stmt->rowCount() > 0){
                     array_push($errors, "Username bestaat al.");
                 } else {
-                    // Hash het wachtwoord
-                    $hashed_password = password_hash($this->password, PASSWORD_DEFAULT);
                     
                     // Insert nieuwe user in database
                     $query = "INSERT INTO gebruiker (username, password, email) VALUES (:username, :password, :email)";
