@@ -2,7 +2,7 @@
     // Functie: User class met database 
     // Auteur: Thierry Chatoorang
 
-    require_once 'config.php';
+    require_once 'database.php';
 
     class User{
 
